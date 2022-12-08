@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+
+    background: -webkit-linear-gradient(180deg, #567878,#fccc8c);/* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #567878,#fccc8c);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Page */
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.page__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+#fury {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Nav */
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+    color: #fce38a;
+
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: #fce38a;
+}
+
+
+/* Button */
+.btn-outline-info {
+    margin-left: 60px;
+    margin-right: 60px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid rgba(255, 255, 255, 1);
+
+    background: rgba(46, 204, 113, 0);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn-outline-info:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+
+.btn-outline-danger {
+    margin-right: 70px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid rgba(204, 46, 46, 0.4);
+
+    background: rgba(204, 46, 46, 0.4);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn-outline-danger:hover {
+    background-color: rgba(180, 40, 40, 0.85);
+    color: #fff;
+}
+
+
+.btn-success {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid rgba(255, 255, 255, 1);
+
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn-success:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+
+.supButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+
+
+#supTitleText {
+    margin-top: 100px;
+    color: #FFF;
+}
+
+
+#subTitleText {
+    color: #FFF;
+    font-size: 18px;
+}
+
+/* Comments */
+.text-center {
+    text-align: center;
+    color: #FFF;
+    font-size: 22px;
+}
+
+
+.list-group {
+    font-size: 16px;
+    list-style-type: none;
+
+    color: #FFF;
+    margin-left: 34%;
+}
+
+
+.addComments{
+    text-align: center;
+}
+
+
+.form-control {
+    font-size: 17px;
+    width: 565px;
+    height: 64px;
+    max-width: 565px;
+    max-height: 64px;
+
+    display: block;
+    margin: 15px auto;
+    padding: 20px 20px;
+    outline: none;
+
+    color: #FFF;
+    background: none;
+
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+
+    transition: .25s;
+}
+
+
+#line {
+    background: #FFF;
+    height: 3px;
+    width: 800px;
+    border-radius: 18px;
+}
+
+
+#username {
+    font-style: oblique;
+}
